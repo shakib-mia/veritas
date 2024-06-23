@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="flex divide-x divide-[#BF9874] font-sans-serif">
+      <aside class="flex items-center justify-center w-0 md:w-1/12">
+        <img src="./assets/logo.jpg" alt="logo" />
+      </aside>
+      <aside class="flex flex-col divide-y divide-[#BF9874] w-full">
+        <div class="flex justify-between items-center px-8">
+          <div class="py-4 flex gap-4 md:gap-8 flex-col md:flex-row">
+            <div class="flex gap-4 items-center">
+              <i class="fa fa-phone rotate-90 text-[#BF9874]"></i>
+
+              <p>+ 383 (21) 23 43984</p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <i class="fa fa-clock text-[#BF9874]"></i>
+
+              <p>MONDAY - FRIDAY 7:30AM - 6:30PM</p>
+            </div>
+          </div>
+
+          <ul class="gap-5 text-primary text-base font-medium hidden md:flex">
+            <li>
+              <a href="#">IN.</a>
+            </li>
+            <li>
+              <a href="#">IG.</a>
+            </li>
+            <li>
+              <a href="#">FB.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="py-4 px-8 items-center justify-between flex">
+          <img
+            src="./assets/logo.jpg"
+            class="w-10 block md:hidden"
+            alt="logo"
+          />
+          <label for="nav-check" class="md:hidden">
+            <i class="fa fa-bars"></i>
+          </label>
+          <input type="checkbox" class="hidden" id="nav-check" />
+          <ul
+            class="flex flex-col md:flex-row gap-3 z-50 md:gap-10 absolute md:static top-[10rem] bg-white w-full md:w-fit left-0 px-8 md:px-0 md:py-4"
+            id="nav-list"
+          >
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-4 hover:text-primary transition"
+              >
+                <i class="fa fa-square rotate-45 text-sm"></i> Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-4 hover:text-primary transition"
+              >
+                <i class="fa fa-square rotate-45 text-sm"></i> About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-4 hover:text-primary transition"
+              >
+                <i class="fa fa-square rotate-45 text-sm"></i> Career</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-4 hover:text-primary transition"
+              >
+                <i class="fa fa-square rotate-45 text-sm"></i> Contact</a
+              >
+            </li>
+
+            <li class="md:hidden">
+              <button class="btn-outline">FREE CONSULTATION</button>
+            </li>
+          </ul>
+
+          <button class="btn-outline hidden md:block">FREE CONSULTATION</button>
+        </div>
+      </aside>
+    </nav>
+
+    <!-- ====================== Header Section ====================== -->
+
+    <header
+      style="background-image: url(./assets/banner.jpg)"
+      class="h-screen bg-no-repeat bg-cover pt-48 pb-20"
+    >
+      <div class="container text-white">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <p
+                class="text-primary text-xl tracking-[20%]"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                HOME OF LAW & ORDER
+              </p>
+              <h1
+                class="text-6xl md:text-6xl lg:text-8xl font-serif"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                EXPERTS OF JUSTICE
+              </h1>
+
+              <p
+                class="lg:w-1/2"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                Diam leo vitae tortor mauris faucibus odio nullam enim. At dolor
+                pellentesque eget et purus. Purus mauris eget maecenas placerat
+                vehicula tortor massa.
+              </p>
+              <p class="signature text-9xl opacity-15 relative -top-12">
+                Kim Wexler
+              </p>
+
+              <button class="btn-primary">Find out more</button>
+            </div>
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <p
+                  class="text-primary text-xl tracking-[20%]"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
+                  HOME OF LAW & ORDER
+                </p>
+                <h1
+                  class="text-6xl md:text-6xl lg:text-8xl font-serif"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
+                  EXPERTS OF JUSTICE
+                </h1>
+  
+                <p
+                  class="lg:w-1/2"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  Diam leo vitae tortor mauris faucibus odio nullam enim. At dolor
+                  pellentesque eget et purus. Purus mauris eget maecenas placerat
+                  vehicula tortor massa.
+                </p>
+                <p class="signature text-9xl opacity-15 relative -top-12">
+                  Kim Wexler
+                </p>
+  
+                <button class="btn-primary">Find out more</button>
+              </div>
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <p
+                    class="text-primary text-xl tracking-[20%]"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    HOME OF LAW & ORDER
+                  </p>
+                  <h1
+                    class="text-6xl md:text-6xl lg:text-8xl font-serif"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    EXPERTS OF JUSTICE
+                  </h1>
+    
+                  <p
+                    class="lg:w-1/2"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    Diam leo vitae tortor mauris faucibus odio nullam enim. At dolor
+                    pellentesque eget et purus. Purus mauris eget maecenas placerat
+                    vehicula tortor massa.
+                  </p>
+                  <p class="signature text-9xl opacity-15 relative -top-12">
+                    Kim Wexler
+                  </p>
+    
+                  <button class="btn-primary">Find out more</button>
+                </div>
+                
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </header>
+    <div class="bg-blue-light-2 py-10">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <aside
+            class="flex gap-8 items-center justify-center md:justify-normal"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="0"
+          >
+            <img
+              src="./assets/icons/best-law-1.png"
+              class="w-32"
+              alt="best-law-1"
+            />
+            <div class="flex flex-col gap-1">
+              <h6 class="text-2xl text-blue font-semibold font-sans-serif">
+                Best Law Firm
+              </h6>
+              <p class="text-base text-gray">45 Years of Experience</p>
+            </div>
+          </aside>
+
+          <aside
+            class="flex gap-8 items-center justify-center md:justify-normal"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <img
+              src="./assets/icons/best-law-2.png"
+              class="w-32"
+              alt="best-law-2"
+            />
+            <div class="flex flex-col gap-1">
+              <h6 class="text-2xl text-blue font-semibold font-sans-serif">
+                Best Law Firm
+              </h6>
+              <p class="text-base text-gray">45 Years of Experience</p>
+            </div>
+          </aside>
+
+          <aside
+            class="flex gap-8 items-center justify-center md:justify-normal"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+          >
+            <img
+              src="./assets/icons/best-law-3.png"
+              class="w-32"
+              alt="best-law-3"
+            />
+            <div class="flex flex-col gap-1">
+              <h6 class="text-2xl text-blue font-semibold font-sans-serif">
+                Best Law Firm
+              </h6>
+              <p class="text-base text-gray">45 Years of Experience</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+
+
+  <!-- ====================== Video Section ====================== -->
+
+  <section style="background-image: url(./assets/images/world.png);" class="bg-contain bg-no-repeat bg-center container py-10 lg:h-screen justify-center flex items-center">
+    <input type="checkbox" name="" id="video-check" class="hidden cursor-pointer">
+    <div class="lg:h-screen flex items-center justify-center relative">
+      <img src="./assets/images/video-placeholder.jpg" alt="video-placeholder">
+      <label for="video-check" class="absolute left-0 right-0 top-0 bottom-0 m-auto flex justify-center items-center w-28 h-28 bg-white cursor-pointer rounded">
+        <i class="fa fa-play text-4xl text-primary"></i>
+      </label>
+    </div>
+
+    <div class="h-screen w-screen fixed left-0 top-0 bg-black bg-opacity-85" id="video-container">
+      <div class="h-full w-full relative flex justify-center items-center">
+        <label for="video-check" class="absolute right-10 top-10 cursor-pointer">
+          <i class="fa fa-times text-primary text-3xl"></i>
+        </label>
+
+        <iframe class="w-11/12 lg:w-1/2 aspect-[16/9]" src="https://www.youtube.com/embed/u31qwQUeGuM?si=o5ek90zn6R4EWW4G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b50fc748ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
