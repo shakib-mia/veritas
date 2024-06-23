@@ -11,6 +11,29 @@ export default {
       ["sans-serif"]: ["Archivo", "sans-serif"],
     },
     extend: {
+      keyframes: {
+        line: {
+          "0%": {
+            width: 0,
+          },
+          "100%": {
+            width: "100%",
+          },
+        },
+
+        vertical: {
+          "0%": {
+            height: 0,
+          },
+          "100%": {
+            height: "100%",
+          },
+        },
+      },
+      animation: {
+        line: "line 4s linear",
+        "line-vertical": "vertical linear",
+      },
       colors: {
         primary: {
           DEFAULT: "#BF9874",

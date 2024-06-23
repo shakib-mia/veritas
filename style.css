@@ -32,7 +32,7 @@ h6 {
 }
 
 button {
-  @apply px-8 py-4;
+  @apply px-4 py-3 xl:px-8 xl:py-4;
 }
 
 button.btn-outline {
@@ -41,6 +41,10 @@ button.btn-outline {
 
 .btn-primary {
   @apply bg-primary border-2 border-primary hover:bg-transparent transition hover:text-primary;
+}
+
+.btn-dark {
+  @apply bg-blue border-2 border-blue hover:bg-transparent transition hover:text-blue text-white;
 }
 
 header .swiper-pagination-bullet {
@@ -74,9 +78,28 @@ header .swiper-pagination-bullet-active::after {
 }
 
 #video-container {
-  @apply hidden;
+  @apply opacity-0 pointer-events-none transition duration-300;
 }
 
 #video-check:checked ~ #video-container {
-  @apply block;
+  @apply opacity-100 pointer-events-auto;
+}
+
+#heritage-line {
+  @apply w-px h-full xl:h-px xl:w-full absolute left-0 bg-primary;
+  animation: increaseWidth 3s linear;
+  animation-delay: 1s;
+}
+
+@keyframes increaseWidth {
+  from {
+    @apply h-0 xl:w-0;
+  }
+  to {
+    @apply h-full xl:h-0 xl:w-full;
+  }
+}
+
+.aos-animate.increase-width {
+  animation: increaseWidth 2s linear forwards;
 }
