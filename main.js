@@ -74,3 +74,22 @@ AOS.init();
 //     }
 //   }
 // });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".accordion-button");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const panel = document.querySelector(this.dataset.accordionTarget);
+
+      // Toggle the panel
+      if (panel.classList.contains("hidden")) {
+        panel.classList.remove("hidden");
+        this.classList.add("active");
+      } else {
+        panel.classList.add("hidden");
+        this.classList.remove("active");
+      }
+    });
+  });
+});
