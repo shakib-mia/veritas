@@ -47,30 +47,30 @@ button.btn-outline {
   @apply bg-blue border-2 border-blue hover:bg-transparent transition hover:text-blue text-white;
 }
 
-header .swiper-pagination-bullet {
-  @apply bg-white w-3 h-3 opacity-100 rounded-none rotate-45;
+.swiper-pagination-bullet {
+  @apply !bg-white !w-3 !h-3 !opacity-100 !rounded-none !rotate-45;
 }
 
 .signature {
   font-family: "Karstar Free", sans-serif;
 }
 
-header .swiper-button-prev,
-header .swiper-button-next {
-  @apply hidden;
+.swiper-button-prev,
+.swiper-button-next {
+  @apply !hidden;
 }
 
-header .swiper-pagination {
-  @apply left-0 text-left relative mt-16 flex gap-2;
+.swiper-pagination {
+  @apply !left-0 !text-left !relative !mt-16 !flex !gap-2;
 }
 
-header .swiper-pagination-bullet-active {
-  @apply bg-primary;
+.swiper-pagination-bullet-active {
+  @apply !bg-primary;
 }
 
-header .swiper-pagination-bullet-active::after {
+.swiper-pagination-bullet-active::after {
   content: "";
-  @apply inline-block h-px w-5 bg-primary -rotate-45 absolute bottom-2 right-[-6px];
+  @apply !inline-block !h-px !w-5 !bg-primary !-rotate-45 !absolute !bottom-2 !right-[-6px];
 }
 
 .swiper-scrollbar {
