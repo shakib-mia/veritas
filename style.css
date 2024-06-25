@@ -68,10 +68,10 @@ button.btn-outline {
   @apply !bg-primary;
 }
 
-.swiper-pagination-bullet-active::after {
+/* .swiper-pagination-bullet-active::after {
   content: "";
   @apply !inline-block !h-px !w-5 !bg-primary !-rotate-45 !absolute !bottom-2 !right-[-6px];
-}
+} */
 
 .swiper-scrollbar {
   @apply hidden;
@@ -161,4 +161,25 @@ button.btn-outline {
 
 .accordion-panel {
   @apply text-gray;
+}
+
+#internship-section::after {
+  content: "";
+  background-image: url("./assets/images/internship.png");
+  @apply hidden xl:inline-block w-1/2 h-full absolute right-0 top-0;
+}
+
+input,
+.select {
+  @apply border-b border-primary focus:outline-none px-5 py-2 italic text-base xl:text-xl bg-transparent;
+}
+
+select {
+  @apply bg-transparent;
+}
+
+#about-lawyer-section::after {
+  content: "";
+  background-image: url("./assets/images/jack-morgan.jpg");
+  @apply hidden xl:inline-block w-[45%] h-full absolute left-0 top-0 bg-cover bg-no-repeat overflow-hidden;
 }

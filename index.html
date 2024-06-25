@@ -524,13 +524,17 @@
               <h4 class="text-xl xl:text-3xl mb-2 font-medium">
                 An interview With Jack Morgan McGills
               </h4>
-              <p class="text-gray text-sm xl:text-base">
+              <p class="text-gray text-sm xl:text-base" id="interview-para">
                 Eu elementum faucibus at consectetur suspendisse pellentesque
                 duis.
               </p>
             </aside>
 
-            <aside data-aos="fade-left" data-aos-duration="1000">
+            <aside
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-anchor="#interview-para"
+            >
               <button class="btn-dark uppercase">find out more</button>
             </aside>
           </div>
@@ -957,74 +961,77 @@
       style="background-image: url(./assets/images/expertise-bg.png)"
     >
       <div class="xl:h-[704px] relative bg-blue-light-2 bg-opacity-90">
-        <div class="relative xl:absolute h-full w-screen top-0 left-0 z-0">
-          <img
-            src="./assets/images/jack-morgan.jpg"
-            class="xl:h-full"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            alt=""
-          />
-        </div>
-        <div class="container relative z-50 h-full">
-          <div class="flex items-center h-full">
-            <div class="w-full xl:w-1/2 ml-auto py-4 xl:py-0">
-              <h1
-                class="text-3xl xl:text-6xl uppercase font-serif"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
-                Jack Morgan McGills
-              </h1>
-              <h6
-                class="my-5 text-sm xl:text-2xl uppercase xl:mb-14"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                Senior Attorney & Owner of Victoria Law Office
-              </h6>
-
-              <p
-                class="text-blue-light text-xs xl:text-xl"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="400"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod temp incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu
-              </p>
-
-              <div class="flex gap-12 my-12">
-                <img
-                  src="./assets/icons/best-law-2.png"
-                  class="w-24"
-                  alt=""
+        <div id="about-lawyer-section" class="h-full">
+          <div class="xl:hidden h-full w-screen top-0 left-0 z-0">
+            <img
+              src="./assets/images/jack-morgan.jpg"
+              class="xl:h-full"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              alt=""
+            />
+          </div>
+          <div class="container relative z-50 h-full">
+            <div class="flex items-center h-full">
+              <div class="w-full xl:w-1/2 ml-auto py-4 xl:py-0">
+                <h1
+                  class="text-3xl xl:text-6xl uppercase font-serif"
                   data-aos="fade-left"
                   data-aos-duration="1000"
-                  data-aos-delay="600"
-                />
-                <img
-                  src="./assets/icons/best-law-1.png"
-                  class="w-24"
-                  alt=""
+                >
+                  Jack Morgan McGills
+                </h1>
+                <h6
+                  class="my-5 text-sm xl:text-2xl uppercase xl:mb-14"
                   data-aos="fade-left"
                   data-aos-duration="1000"
-                  data-aos-delay="650"
-                />
+                  data-aos-delay="200"
+                >
+                  Senior Attorney & Owner of Victoria Law Office
+                </h6>
+
+                <p
+                  class="text-blue-light text-xs xl:text-xl"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod temp incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu
+                </p>
+
+                <div class="flex gap-12 my-12">
+                  <img
+                    src="./assets/icons/best-law-2.png"
+                    class="w-24"
+                    alt=""
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="600"
+                  />
+                  <img
+                    src="./assets/icons/best-law-1.png"
+                    class="w-24"
+                    alt=""
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="650"
+                  />
+                </div>
+
+                <button
+                  class="btn-outline"
+                  data-aos="fade-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="700"
+                >
+                  REQUEST AN APPOINTMENT
+                </button>
               </div>
-
-              <button
-                class="btn-outline"
-                data-aos="fade-in"
-                data-aos-duration="1000"
-                data-aos-delay="700"
-              >
-                REQUEST AN APPOINTMENT
-              </button>
             </div>
           </div>
         </div>
@@ -1225,14 +1232,13 @@
 
     <!-- ================== Internship section ====================== -->
 
-    <section class="py-14 xl:py-28 relative overflow-hidden">
+    <section
+      class="py-14 xl:py-28 relative overflow-hidden bg-[size:0] xl:bg-[size:50%] bg-no-repeat bg-[top_right_-10rem]"
+      id="internship-section"
+    >
       <div class="container">
-        <div class="xl:w-1/2">
-          <img
-            src="./assets/images/internship.png"
-            class="xl:absolute top-0 right-0"
-            alt=""
-          />
+        <div class="xl:hidden w-full">
+          <img src="./assets/images/internship.png" alt="" />
         </div>
         <div class="xl:w-1/2">
           <h6
@@ -1351,7 +1357,7 @@
     <!-- ================== Testimonials section ====================== -->
 
     <section
-      class="bg-[right_bottom_-26rem] bg-no-repeat bg-contain h-screen"
+      class="bg-[right_bottom_-26rem] bg-no-repeat bg-contain 2xl:h-screen"
       style="background-image: url(./assets/images/expertise-bg.png)"
     >
       <div class="w-full xl:h-full bg-blue bg-opacity-95">
@@ -1364,7 +1370,7 @@
             />
 
             <div
-              class="xl:w-1/2 ml-auto h-full xl:flex flex-col justify-center"
+              class="xl:w-1/2 ml-auto h-full xl:flex flex-col justify-center py-20"
             >
               <div class="mt-6 xl:mt-0 xl:w-11/12 ml-auto">
                 <h5
@@ -1426,6 +1432,265 @@
         </div>
       </div>
     </section>
+
+    <!-- =========================  Contact Section  ============================ -->
+    <section
+      class="xl:h-screen bg-no-repeat bg-[right_bottom] bg-[size:60%]"
+      style="background-image: url(./assets/images/expertise-bg.png)"
+    >
+      <div
+        class="h-full w-full py-6 xl:py-0 bg-white bg-opacity-90 flex flex-col justify-center"
+      >
+        <div class="flex justify-center gap-2 xl:gap-7 items-center">
+          <img
+            src="./assets/images/designbar.png"
+            class="w-[100px] h-3"
+            alt="designbar"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          />
+          <h1
+            class="text-lg xl:text-4xl xl:text-[5rem] text-center font-serif"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            MAKE AN INQUIRY
+          </h1>
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <img
+              src="./assets/images/designbar.png"
+              class="!rotate-180 w-[100px] h-3"
+              alt="designbar"
+            />
+          </div>
+        </div>
+        <h6
+          class="text-xs xl:text-xl text-primary font-medium text-center mt-4 xl:mt-12"
+          data-aos="fade-down"
+          data-aos-delay="800"
+          data-aos-duration="1000"
+        >
+          VISION MAKES US WHO WE ARE
+        </h6>
+
+        <form class="mt-14 container">
+          <div class="flex gap-7">
+            <input type="text" placeholder="Full Name" class="w-1/2" />
+            <input type="text" placeholder="Email" class="w-1/2" />
+          </div>
+
+          <div class="select">
+            <select name="" id="" class="w-full mt-7">
+              <option value="Business" class="opacity-50" selected>
+                Business
+              </option>
+              <option value="Business">Business 1</option>
+              <option value="Business">Business 2</option>
+              <option value="Business">Business 3</option>
+            </select>
+          </div>
+
+          <input type="text" placeholder="Message" class="w-full mt-7" />
+
+          <div class="text-center mt-14">
+            <button
+              class="btn-outline"
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="700"
+            >
+              REQUEST AN APPOINTMENT
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================  Footer Section  ============================ -->
+
+    <footer class="bg-blue pt-36 pb-14 relative">
+      <div class="container">
+        <div class="flex justify-center w-screen absolute top-0 left-0">
+          <img src="./assets/images/footer-logo.png" alt="" />
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+          <ul
+            class="text-blue-light"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h5 class="text-2xl font-medium mb-3 text-white">
+              Hawaii Main Office
+            </h5>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >T: 383 (21) 23 43984</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >M: 907 683 8196</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >A: 828 Timbercrest Road,</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >Healy City, AK 99743</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >E: info.us@veritas.com</a
+              >
+            </li>
+          </ul>
+          <ul
+            class="text-blue-light"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <h5 class="text-2xl font-medium mb-3 text-white">World Offices</h5>
+
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >US - Hawaii</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >US - San Francisco</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >UK - London</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >EU - Zurich</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >UAE - Abu Dhabi</a
+              >
+            </li>
+          </ul>
+          <ul
+            class="text-blue-light"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <h5 class="text-2xl font-medium mb-3 text-white">Expertise</h5>
+
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >Automotive Industry</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >Cannabis Law</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >Construction & Real Estate</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >Media & Insurance Law</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >Technology 7 Data Law</a
+              >
+            </li>
+          </ul>
+          <ul
+            class="text-blue-light"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <h5 class="text-2xl font-medium mb-3 text-white">FAQ</h5>
+
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >How Do I Choose a Lawyer?</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >What is Domestic Violence?</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >How is child custody determined?</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >Do i need a personal Lawyer?</a
+              >
+            </li>
+            <li class="leading-8">
+              <a href="#" class="hover:text-blue-light-2 transition"
+                >Are you licensed in my country?</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col xl:flex-row justify-between mt-32 items-center xl:items-end"
+        >
+          <h2 class="text-2xl text-white font-sans-serif">
+            Hire one of our professional legal expert now
+          </h2>
+          <p class="text-white">
+            Emergency Call
+            <a href="tel:9076838196" class="text-primary">907 683 8196</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="bg-blue-light-2">
+      <div class="container py-5">
+        <div
+          class="flex flex-col xl:flex-row gap-4 xl:gap-0 justify-between font-medium"
+        >
+          <aside>
+            <a href="#" class="text-base text-blue-light">Privacy</a>
+          </aside>
+
+          <aside class="text-blue-light">
+            Copyright
+            <a href="#" class="text-base font-bold">Dotcreativemarket</a>, All
+            Rights Reserved
+          </aside>
+
+          <aside class="flex gap-6">
+            <i class="fa fa-facebook-f text-blue-light"></i>
+            <i class="fa fa-twitter text-blue-light"></i>
+            <i class="fa fa-instagram text-blue-light"></i>
+          </aside>
+        </div>
+      </div>
+    </div>
 
     <script src="./heritage-line-animation.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
