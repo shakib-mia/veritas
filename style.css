@@ -6,8 +6,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply overflow-x-auto;
+}
+
 body {
-  @apply font-sans-serif selection:bg-primary selection:text-white;
+  @apply font-sans-serif selection:bg-primary selection:text-white w-screen overflow-x-hidden;
 }
 
 ::-webkit-scrollbar {

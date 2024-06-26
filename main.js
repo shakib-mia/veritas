@@ -24,7 +24,9 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 // function isElementInViewport(el) {
 //   const rect = el.getBoundingClientRect();
