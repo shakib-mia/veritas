@@ -60,3 +60,24 @@ By licensing our Veritas HTML Template under the GPL, we aim to promote the prin
 
 **UI Designed by:** [DotCreativeMarket](<https://www.figma.com/design/lQ7h30C1ohpkxwazQl51Wd/Veritas-Law-Firm---Landing-page-website-(Community)?t=EZp63pPkk0JQHtex-0>)  
 **Developed by:** [Raddito](https://raddito.com/)
+
+# Available Scripts
+
+### `npm i` or `npm install`
+
+Installs the existing packages
+
+### `npm run dev`
+
+Runs the app in the development mode.\
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm run build`
+
+Builds the app for production to the `dist` folder.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
