@@ -1,6 +1,6 @@
 # Veritas
 
-## Veritas
+## Description
 
 **Veritas HTML Template with Vite and Tailwind CSS**
 
