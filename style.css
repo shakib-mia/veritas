@@ -35,20 +35,21 @@ h6 {
   @apply h-[28%];
 }
 
+.btn,
 button {
   @apply px-4 py-3 xl:px-8 xl:py-4 text-sm xl:text-base;
 }
 
-button.btn-outline {
+.btn-outline {
   @apply border-2 border-blue px-4 py-2 lg:px-8 lg:py-4 text-blue font-semibold hover:bg-blue hover:text-white transition;
 }
 
 .btn-primary {
-  @apply bg-primary border-2 border-primary hover:bg-transparent transition hover:text-primary;
+  @apply bg-primary border-2 border-primary hover:bg-white transition hover:text-primary;
 }
 
 .btn-dark {
-  @apply bg-blue border-2 border-blue hover:bg-transparent transition hover:text-blue text-white;
+  @apply bg-blue border-2 border-blue hover:bg-white transition hover:text-blue text-white;
 }
 
 .swiper-pagination-bullet {
